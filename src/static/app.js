@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         activityCard.className = "activity-card";
 
         const spotsLeft = details.max_participants - details.participants.length;
-        let participantsHTML = "<ul>";
+        let participantsHTML = "<ul class='participants-list'>";
         details.participants.forEach(participant => {
           participantsHTML += `<li>${participant}</li>`;
         });
